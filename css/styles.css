@@ -1,3 +1,24 @@
+/* body {
+  background-image: url(img/mr-rogers.jpeg);
+} */
+.container {
+  background-color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.form-group {
+  font-size: 20px;
+}
 #result {
-  word-wrap: break-word;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+body {
+  background-image: url("https://static01.nyt.com/images/2019/11/24/magazine/24mag-rogers-image/24mag-rogers-image-superJumbo-v2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1500px 1200px;
+  background-color: grey;
 }
