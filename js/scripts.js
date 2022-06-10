@@ -3,11 +3,15 @@
 //Business Logic//
 
 function numberList(numberInput) {
-  let numArray = [];
+  let numReturn = [];
   for (let i = 0; i <= numberInput; i +=1) {
-    numArray.push(i);
+    if (numberInput[i] === 1) {
+      numberInput[i] = "Beep!"
+    }
+    numReturn.push(i);
   }
-  return numArray;
+  
+  return numReturn;
 }
 
 
