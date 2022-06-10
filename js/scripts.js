@@ -8,10 +8,11 @@ function notNumber(numberInput) {
     return 'Not a Number!';
   }
 }
+
 //Business Logic//
 
 function numberList(numberInput) {
-  let numReturn = [];
+  let numReturn = []
   if (noInput(numberInput)) {
     return "Please enter a number!";
   }
@@ -21,10 +22,8 @@ function numberList(numberInput) {
   for (let i = 0; i <= numberInput; i +=1) {
     numReturn.push(i);
   }
-  return numReturn;
-
-}
-
+  return numReturn
+  }
 
 //UI Logic//
 $(document).ready(function() {
