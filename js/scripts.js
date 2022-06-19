@@ -19,18 +19,27 @@ function numberList(numberInput) {
   if (notNumber(numberInput)) {
     return "Not a Number!";
   }
-  for (let i = 0; i <= numberInput; i +=1) {
+  // console.log(typeof numberInput)
+  for (let i=0; i <= parseInt(numberInput); i +=1) {
     numReturn.push(i);
+    if (numReturn[i].toString().includes(3)) {
+      numReturn[i] = "Wont you be my neighbor"
+    } 
+    else if (numReturn[i].toString().includes(2)) {
+        numReturn[i] = "Boop"
+      } else if (numReturn[i].toString().includes(1)) {
+        numReturn[i] = "Beep"
+      }
   }
   return numReturn
-  }
+}
 
 //UI Logic//
 $(document).ready(function() {
   $("form#userInput").submit(function(event){
     event.preventDefault();
     const numInput = $("#numberInput").val();
-    const numReturn = numberList(numInput);
-    $("#output").html(numReturn + "");
+    const numberReturn = numberList(numInput);
+    $("#output").html(numberReturn + "");
   })
 });
